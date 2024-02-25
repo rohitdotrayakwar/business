@@ -14,7 +14,7 @@ Welcome to the Business Mini Website front-end repository! This project is a sim
 
 ## Demo
 
-You can view a live demo of the website [here](#).
+You can view a live demo of the website [here](https://rohitdotrayakwar.github.io/business/).
 
 ## Features
 
@@ -35,13 +35,7 @@ You can view a live demo of the website [here](#).
 
 To run this project locally, follow these steps:
 
-1. Clone this repository to your local machine using `git clone https://github.com/your_username/business-mini-website.git`
-2. Navigate to the project directory: `cd business-mini-website`
-3. Install the dependencies: `npm install`
+1. Clone this repository to your local machine using ``
+2. Navigate to the project directory: `cd business`
 
-## Usage
 
-After completing the installation steps, you can start the development server by running:
-
-```bash
-npm start
