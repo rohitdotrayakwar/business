@@ -1,6 +1,8 @@
 # Business Mini Website - Front-end
 
 Welcome to the Business Mini Website front-end repository! This project is a simple website for a fictional business built with React.js. It showcases the business's services, features a gallery of products, and provides contact information.
+## Screenshoot
+![image](https://github.com/rohitdotrayakwar/business/assets/153349651/12c0ddd1-48f5-43d1-a5e4-7732214d268e)
 
 ## Table of Contents
 
