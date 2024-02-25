@@ -35,7 +35,7 @@ You can view a live demo of the website [here](https://rohitdotrayakwar.github.i
 
 To run this project locally, follow these steps:
 
-1. Clone this repository to your local machine using ``
+1. Clone this repository to your local machine using `https://github.com/rohitdotrayakwar/business`
 2. Navigate to the project directory: `cd business`
-
+3. open index.html file for running proeject.
 
