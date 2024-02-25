@@ -1,0 +1,242 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body {
+    background-image: url(../img/team.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 20%;
+    line-height: 100px;
+    float: left;
+}
+
+.logo h4 {
+    padding-left: 10%;
+    /* Adjust as needed */
+    font-weight: bold;
+    font-size: 120%;
+    /* Responsive font size based on viewport width */
+    animation: blinkAndChange 5s infinite;
+    /* Apply text color animation */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+    /* Initial shadow color */
+    cursor: pointer;
+}
+
+@keyframes blinkAndChange {
+
+    0%,
+    100% {
+        color: red;
+        /* Initial and final text color */
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+        /* Initial and final shadow color */
+    }
+
+    14.28% {
+        color: orange;
+        box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+    }
+
+    28.56% {
+        color: yellow;
+        box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+    }
+
+    42.84% {
+        color: green;
+        box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+    }
+
+    57.12% {
+        color: blue;
+        box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    }
+
+    71.4% {
+        color: indigo;
+        box-shadow: 0 0 10px rgba(75, 0, 130, 0.5);
+    }
+
+    85.68% {
+        color: violet;
+        box-shadow: 0 0 10px rgba(238, 130, 238, 0.5);
+    }
+
+    /* Add more keyframes for the additional colors */
+    /* Continue with all colors in the desired sequence */
+}
+
+/* Media query for adjusting styles on smaller screens */
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 50%;
+        /* Adjust as needed for smaller screens */
+    }
+
+    .logo h4 {
+        padding-left: 5%;
+        /* Adjust as needed */
+        font-size: 6vw;
+        /* Adjust font size for smaller screens */
+    }
+}
+.nav {
+    width: 50%;
+    line-height: 80px;
+    float: right;
+    align-items: left;
+}
+
+a {
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 100px;
+    margin-left: 40px;
+}
+
+a:hover {
+    color: orange;
+    transition: all 2s linear;
+}
+
+.text {
+    width: 100%;
+    margin-top: 150px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.text h4 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.text h1 {
+    font-size: 62px;
+    font-weight: 700px;
+    margin: 14px 0px;
+}
+
+.text h3 {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn1 {
+    background-color: #fff;
+    color: #000;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 25px;
+    width: 120px;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all 1s linear;
+}
+
+.btn1:hover {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid rgb(0, 0, 0);
+    transition: all 1s linear;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: transparent;
+    display: inline-block;
+    border: 2px solid rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 25px;
+    width: 120px;
+    transition: all 1s linear;
+}
+
+.btn:hover{
+    background-color: #fff;
+        color: #000;
+        border: 2px solid rgb(0, 0, 0);
+        cursor: pointer;
+
+}
+
+
+
+
+.menu-toggle {
+    display: none;
+    /* Hide by default */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 18px;
+    }
+
+    .nav {
+        display: none;
+        /* Hide nav links by default */
+    }
+
+    .menu-toggle {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .menu-toggle::before,
+    .menu-toggle::after {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu-toggle::before {
+        transform: translateY(-5px) translateX(-50%);
+    }
+
+    .menu-toggle::after {
+        transform: translateY(5px) translateX(-50%);
+    }
+
+    /* Show nav links when menu toggle is checked */
+    .menu-toggle:checked~.nav {
+        display: block;
+    }
+}
